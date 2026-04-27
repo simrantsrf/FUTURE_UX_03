@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joda & Sons CRM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Joda & Sons</h2>
+                <p>CRM PLATFORM</p>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3>MAIN</h3>
+                    <ul>
+                        <li class="active"><a href="#"><i class="ph ph-squares-four"></i> Overview</a></li>
+                        <li><a href="#"><i class="ph ph-users"></i> Clients</a> <span class="badge">32</span></li>
+                        <li><a href="#"><i class="ph ph-target"></i> Leads</a> <span class="badge danger">8</span></li>
+                        <li><a href="#"><i class="ph ph-check-square"></i> Tasks</a> <span class="badge">14</span></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>REPORTS</h3>
+                    <ul>
+                        <li><a href="#"><i class="ph ph-chart-bar"></i> Analytics</a></li>
+                        <li><a href="#"><i class="ph ph-kanban"></i> Pipeline</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h3>SETTINGS</h3>
+                    <ul>
+                        <li><a href="#"><i class="ph ph-users-three"></i> Team</a></li>
+                        <li><a href="#"><i class="ph ph-plugs"></i> Integrations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">RS</div>
+                <div class="user-info">
+                    <h4>Simran</h4>
+                    <p>Owner</p>
+                </div>
+                <i class="ph ph-gear"></i>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Overview</h1>
+                <div class="topbar-actions">
+                    <div class="search-bar">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" placeholder="Search clients, leads...">
+                    </div>
+                    <button class="icon-btn"><i class="ph ph-bell"></i><span class="notification-dot"></span></button>
+                    <button class="primary-btn">+ New Lead</button>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <p class="metric-title">ACTIVE CLIENTS</p>
+                    <h2>32</h2>
+                    <p class="metric-change positive"><span>+4</span> this month</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-title">OPEN LEADS</p>
+                    <h2>21</h2>
+                    <p class="metric-change positive"><span>+7</span> new this week</p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-title">TASKS DUE</p>
+                    <h2>14</h2>
+                    <p class="metric-change negative"><span>3 overdue</span></p>
+                </div>
+                <div class="metric-card">
+                    <p class="metric-title">REVENUE MRR</p>
+                    <h2>₹8.4L</h2>
+                    <p class="metric-change positive"><span>+12%</span> vs last month</p>
+                </div>
+            </section>
+
+            <div class="content-grid">
+                <div class="left-column">
+                    <section class="active-clients panel">
+                        <div class="panel-header">
+                            <h2>Active Clients</h2>
+                            <div class="tabs">
+                                <button class="active">All</button>
+                                <button>Retainer</button>
+                                <button>Project</button>
+                            </div>
+                        </div>
+                        <div class="client-list">
+                            <div class="list-header">
+                                <span>CLIENT</span>
+                                <span>SERVICE</span>
+                                <span>STATUS</span>
+                            </div>
+                            <div class="list-item">
+                                <div class="client-info">
+                                    <div class="client-avatar bg-purple">ZP</div>
+                                    <div>
+                                        <h4>Zeno Pharma</h4>
+                                        <p>zeno.in</p>
+                                    </div>
+                                </div>
+                                <div class="client-service">SEO + Content</div>
+                                <div class="client-status status-active">Active</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="client-info">
+                                    <div class="client-avatar bg-blue">BF</div>
+                                    <div>
+                                        <h4>BluFin Tech</h4>
+                                        <p>blufin.io</p>
+                                    </div>
+                                </div>
+                                <div class="client-service">Paid Ads</div>
+                                <div class="client-status status-retained">Retained</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="client-info">
+                                    <div class="client-avatar bg-green">NK</div>
+                                    <div>
+                                        <h4>Naksha Realty</h4>
+                                        <p>naksha.co</p>
+                                    </div>
+                                </div>
+                                <div class="client-service">Web + SEO</div>
+                                <div class="client-status status-active">Active</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="client-info">
+                                    <div class="client-avatar bg-orange">MW</div>
+                                    <div>
+                                        <h4>Masai Works</h4>
+                                        <p>masai.in</p>
+                                    </div>
+                                </div>
+                                <div class="client-service">Social Media</div>
+                                <div class="client-status status-at-risk">At Risk</div>
+                            </div>
+                            <div class="list-item">
+                                <div class="client-info">
+                                    <div class="client-avatar bg-indigo">VX</div>
+                                    <div>
+                                        <h4>Vexta Studios</h4>
+                                        <p>vexta.co</p>
+                                    </div>
+                                </div>
+                                <div class="client-service">Branding</div>
+                                <div class="client-status status-onboarding">Onboarding</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="upcoming-tasks panel">
+                        <div class="panel-header">
+                            <h2>Upcoming Tasks</h2>
+                            <button class="secondary-btn">All tasks &rarr;</button>
+                        </div>
+                        <ul class="task-list">
+                            <li class="task-item">
+                                <input type="checkbox" id="task1">
+                                <div class="task-content">
+                                    <label for="task1" class="task-title">Send revised proposal to BluFin Tech</label>
+                                    <p class="task-meta">BluFin Tech &middot; Paid Ads</p>
+                                </div>
+                                <div class="task-time time-today">Today, 3 PM</div>
+                            </li>
+                            <li class="task-item completed">
+                                <input type="checkbox" id="task2" checked>
+                                <div class="task-content">
+                                    <label for="task2" class="task-title">Monthly SEO report — Zeno Pharma</label>
+                                    <p class="task-meta">Zeno Pharma &middot; SEO</p>
+                                </div>
+                                <div class="task-time">Done</div>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="task3">
+                                <div class="task-content">
+                                    <label for="task3" class="task-title">Kickoff call with Vexta Studios</label>
+                                    <p class="task-meta">Vexta Studios &middot; Onboarding</p>
+                                </div>
+                                <div class="task-time">Tomorrow, 11 AM</div>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="task4">
+                                <div class="task-content">
+                                    <label for="task4" class="task-title">Review ad creatives for Q2 campaign</label>
+                                    <p class="task-meta">Internal &middot; Marketing</p>
+                                </div>
+                                <div class="task-time">Apr 11</div>
+                            </li>
+                            <li class="task-item overdue">
+                                <input type="checkbox" id="task5">
+                                <div class="task-content">
+                                    <label for="task5" class="task-title">Follow up with Masai Works &mdash; churn
+                                        risk</label>
+                                    <p class="task-meta">Masai Works &middot; Retention</p>
+                                </div>
+                                <div class="task-time time-overdue">Overdue</div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="lead-pipeline panel">
+                        <div class="panel-header">
+                            <h2>Lead Pipeline</h2>
+                            <button class="secondary-btn">Kanban &rarr;</button>
+                        </div>
+                        <ul class="pipeline-stages">
+                            <li>
+                                <span>New</span>
+                                <div class="stage-bar-container">
+                                    <div class="stage-bar bg-blue" style="width: 20%"></div>
+                                </div>
+                                <strong>9</strong>
+                            </li>
+                            <li>
+                                <span>Contacted</span>
+                                <div class="stage-bar-container">
+                                    <div class="stage-bar bg-orange" style="width: 15%"></div>
+                                </div>
+                                <strong>6</strong>
+                            </li>
+                            <li>
+                                <span>Proposal</span>
+                                <div class="stage-bar-container">
+                                    <div class="stage-bar bg-purple" style="width: 10%"></div>
+                                </div>
+                                <strong>4</strong>
+                            </li>
+                            <li>
+                                <span>Negotiation</span>
+                                <div class="stage-bar-container">
+                                    <div class="stage-bar bg-red" style="width: 5%"></div>
+                                </div>
+                                <strong>2</strong>
+                            </li>
+                            <li>
+                                <span>Converted</span>
+                                <div class="stage-bar-container">
+                                    <div class="stage-bar bg-green" style="width: 40%"></div>
+                                </div>
+                                <strong class="text-green">15</strong>
+                            </li>
+                        </ul>
+                        <div class="pipeline-metrics">
+                            <div class="pipeline-metric-card">
+                                <p>CONVERSION RATE</p>
+                                <h3 class="text-green">41%</h3>
+                            </div>
+                            <div class="pipeline-metric-card">
+                                <p>AVG. DEAL SIZE</p>
+                                <h3>₹41K</h3>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="notifications panel">
+                        <div class="panel-header">
+                            <h2>Notifications</h2>
+                            <span class="badge blue">4 new</span>
+                        </div>
+                        <ul class="notification-list">
+                            <li class="notification-item unread">
+                                <div class="notif-icon bg-blue-light"><i class="ph ph-envelope-simple"></i></div>
+                                <div class="notif-content">
+                                    <p><strong>BluFin Tech</strong> replied to your proposal email</p>
+                                    <span class="notif-time">Just now</span>
+                                </div>
+                                <div class="unread-dot"></div>
+                            </li>
+                            <li class="notification-item unread">
+                                <div class="notif-icon bg-red-light"><i class="ph ph-warning"></i></div>
+                                <div class="notif-content">
+                                    <p><strong>Masai Works</strong> invoice overdue by 7 days</p>
+                                    <span class="notif-time">2 hours ago</span>
+                                </div>
+                                <div class="unread-dot"></div>
+                            </li>
+                            <li class="notification-item">
+                                <div class="notif-icon bg-green-light"><i class="ph ph-check"></i></div>
+                                <div class="notif-content">
+                                    <p><strong>Naksha Realty</strong> signed off on deliverables</p>
+                                    <span class="notif-time">Yesterday</span>
+                                </div>
+                            </li>
+                            <li class="notification-item unread">
+                                <div class="notif-icon bg-purple-light"><i class="ph ph-star"></i></div>
+                                <div class="notif-content">
+                                    <p>New lead from website &mdash; <strong>Orbit Fintech</strong></p>
+                                    <span class="notif-time">Yesterday</span>
+                                </div>
+                                <div class="unread-dot"></div>
+                            </li>
+                            <li class="notification-item">
+                                <div class="notif-icon bg-orange-light"><i class="ph ph-arrows-clockwise"></i></div>
+                                <div class="notif-content">
+                                    <p><strong>Ankit</strong> updated task status on 3 items</p>
+                                    <span class="notif-time">2 days ago</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
